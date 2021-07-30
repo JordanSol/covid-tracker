@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 body {
-    background-color: #1f2421;
+    background-color: #264653;
 }
 
 .container {
@@ -7,4 +9,15 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+}
+
+.title {
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 6rem;
+    text-align: center;
+    color: whitesmoke;
+    @media(max-width: 768px) {
+        font-size: 3rem;
+    }
 }

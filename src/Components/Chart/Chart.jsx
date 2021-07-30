@@ -23,13 +23,13 @@ function Chart({ data: {confirmed, deaths, recovered}, country }) {
                 datasets: [{
                     data: dailyData.map(({ confirmed }) => confirmed),
                     label: 'Infected',
-                    borderColor: '#49a078',
+                    borderColor: '#e9c46a',
                     fill: true
                 },{
                     data: dailyData.map(({ deaths }) => deaths),
                     label: 'Deaths',
-                    borderColor: '#216869',
-                    backgroundColor: 'rgba(33, 104, 105,0.5)',
+                    borderColor: '#e76f51',
+                    backgroundColor: 'rgba(231, 111, 81, 0.5)',
                     fill: true
                 }],
                 }}
@@ -45,9 +45,9 @@ function Chart({ data: {confirmed, deaths, recovered}, country }) {
                     datasets: [{
                         label: 'People',
                         backgroundColor: [
-                            '#49a078',
-                            '#8cb190',
-                            '#216869'
+                            '#e9c46a',
+                            '#2a9d8f',
+                            '#e76f51'
                         ],
                         data:[confirmed.value, recovered.value, deaths.value]
                     }]
